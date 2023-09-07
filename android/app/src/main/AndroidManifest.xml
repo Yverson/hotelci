@@ -14,7 +14,7 @@
     </queries>
 
    <application
-        android:label="Hotel CI"
+        android:label="Resilux"
         android:usesCleartextTraffic="true"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
