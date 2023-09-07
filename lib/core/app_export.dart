@@ -8,6 +8,5 @@ export 'package:hotel_ci/core/utils/math_utils.dart';
 
 export 'package:hotel_ci/theme/app_style.dart';
 
-export 'package:connectivity/connectivity.dart';
 
 export 'package:hotel_ci/routes/app_routes.dart';
