@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+	<style>
+		body {
+			font-family: "Nunito", sans-serif;
+			background: #f1f1f2;
+		}
+
+		ul li {
+			padding: 3px 0;
+			font-weight: 100;
+			color: rgb(71, 71, 71);
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight: bold;
+		}
+
+		h1 {
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body class="h-screen flex flex-col">
+	<div class="w-full bg-black text-white font-bold text-center py-2 text-xl">
+		Hotel Booking App UiKIT in Flutter
+	</div>
+	<div class="xl:container mx-auto grid grid-cols-6 gap-2 h-full w-full">
+		<div class="col-span-1 py-10">
+			<h2 class="font-bold pb-2">Prerequisite Tools & Setup</h2>
+			<ul class="mb-10">
+				<li><a href="../index.html">Introduction</a></li>
+				<li><a href="prerequisite.html">Tools & Setup</a></li>
+				<li>
+					<a href="flutter-windows.html">Setup flutter in android studio - Windows</a>
+				</li>
+				<li>
+					<a href="flutter-macos.html">Setup flutter in android studio - macOS</a>
+				</li>
+				<li>
+					<a href="flutter-linux.html">Setup flutter in android studio - Linux</a>
+				</li>
+			</ul>
+
+			<h2 class="font-bold pb-2">
+				<a href="get-started.html">Getting Started (Build & Run)</a>
+			</h2>
+
+			<h2 class="font-bold pb-2">Configuration & Customization</h2>
+			<ul class="mb-10">
+				<li>
+					<a href="configuration-android.html">Android Configuration</a>
+				</li>
+				<li>
+					<a href="configuration-ios.html">iOS Configuration</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-span-5 bg-white py-10 px-6">
+			<h1 class="mb-5">Get Started (Build & Run)</h1>
+			<p>Follow below steps to build and run your application</p>
+
+			<h2 class="font-black my-5">Step 1 : Download Project</h2>
+			<p>
+				Download and find the your project folder, use your
+				preferred IDE (Android Studio / Visual Studio Code /
+				IntelliJ IDEA) to run the project.
+			</p>
+
+			<img class="m-10 w-4/5" src="../img/open_android_studio.png" />
+
+			<h2 class="font-black my-5">Step 2 : Get Dependencies</h2>
+			<p class="mb-5">
+				After you loaded project successfully, run the following
+				command in the terminal to install all the dependencies
+				listed in the pubspec.yaml file in the project’s root
+				directory or just click on Pub get in pubspec.yaml file if
+				you don’t want to use command.
+			</p>
+			<div class="bg-gray-200 p-5">flutter pub get</div>
+			<p class="my-5">
+				You will see below like screen after you have build your app
+				successfully
+			</p>
+			<img class="m-10 w-4/5" src="../img/flutter_pub_get.png" />
+			<h2 class="font-black my-5">Step 3 : Build and Run App</h2>
+			<ul class="list-decimal mx-10 my-5">
+				<li>Locate the main Android Studio toolbar.</li>
+				<li>
+					In the <b class="font-black">target selector</b>, select
+					an Android device for running the app. If none are
+					listed as available, select
+					<b class="font-black">Tools > Android > AVD Manager</b>
+					and create one there. For details, see
+					<a class="text-blue-600 font-black"
+						href="https://developer.android.com/studio/run/managing-avds">Managing AVDs.</a>
+				</li>
+				<li>
+					Click the run icon in the toolbar, or invoke the menu
+					item <b class="font-black">Run > Run.</b>
+				</li>
+			</ul>
+			<div class="bg-gray-200 p-5">flutter run</div>
+			<img class="m-10 w-4/5" src="../img/flutter_run.png" />
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+	<style>
+		body {
+			font-family: "Nunito", sans-serif;
+			background: #f1f1f2;
+		}
+
+		ul li {
+			padding: 3px 0;
+			font-weight: 100;
+			color: rgb(71, 71, 71);
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight: bold;
+		}
+
+		h1 {
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body class="h-screen flex flex-col">
+	<div class="w-full bg-black text-white font-bold text-center py-2 text-xl">
+		Hotel Booking App UiKIT in Flutter
+	</div>
+	<div class="xl:container mx-auto grid grid-cols-6 gap-2 h-full w-full">
+		<div class="col-span-1 py-10">
+			<h2 class="font-bold pb-2">Prerequisite Tools & Setup</h2>
+			<ul class="mb-10">
+				<li><a href="../index.html">Introduction</a></li>
+				<li><a href="prerequisite.html">Tools & Setup</a></li>
+				<li>
+					<a href="flutter-windows.html" class="font-black">Setup flutter in android studio - Windows</a>
+				</li>
+				<li>
+					<a href="flutter-macos.html">Setup flutter in android studio - macOS</a>
+				</li>
+				<li>
+					<a href="flutter-linux.html">Setup flutter in android studio - Linux</a>
+				</li>
+			</ul>
+
+			<h2 class="font-bold pb-2">
+				<a href="get-started.html">Getting Started (Build & Run)</a>
+			</h2>
+
+			<h2 class="font-bold pb-2">Configuration & Customization</h2>
+			<ul class="mb-10">
+				<li>
+					<a href="configuration-android.html">Android Configuration</a>
+				</li>
+				<li>
+					<a href="configuration-ios.html">iOS Configuration</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-span-5 bg-white py-10 px-6">
+			<h1 class="mb-5">
+				How to Setup Flutter in Android Studio – Windows​
+			</h1>
+			<ul class="list-disc mx-10 my-5">
+				<li>
+					Download Android Studio –
+					<a href="https://developer.android.com/studio/" class="text-blue-600 font-black">
+						https://developer.android.com/studio/
+					</a>
+				</li>
+				<li>
+					Get the Flutter SDK –
+					<a href="https://flutter.dev/docs/get-started/install"
+						class="text-blue-600 font-black">https://flutter.dev/docs/get-started/install</a>
+				</li>
+				<li>
+					Learn more about Android Studio –
+					<a href="https://developer.android.com/studio/intro/" class="text-blue-600 font-black">
+						https://developer.android.com/studio/intro/
+					</a>
+				</li>
+			</ul>
+			<h2 class="font-black my-5">Step 1 : Get the Flutter SDK</h2>
+			<ul class="my-5">
+				<li>
+					Download the following installation bundle to get the
+					latest stable release of the Flutter SDK:
+				</li>
+				<li>
+					Extract the zip file and place the contained flutter in
+					the desired installation location for the Flutter SDK
+					(for example, C:\src\flutter; do not install Flutter in
+					a directory like C:\Program Files\ that requires
+					elevated privileges).
+				</li>
+			</ul>
+			<h2 class="font-black my-5">Step 2 : Update your path</h2>
+			<ul class="my-5">
+				<li>
+					If you wish to run Flutter commands in the regular
+					Windows console, take these steps to add Flutter to the
+					PATH environment variable: From the Start search bar,
+					enter ‘env’ and select Edit environment variables for
+					your account.Under User variables check if there is an
+					entry called Path:
+				</li>
+				<li>
+					<ul>
+						<li>
+							If the entry exists, appendthe full path to
+							flutter\bin using ; as a separator from existing
+							values.
+						</li>
+						<li>
+							If the entry doesn’t exist, create a new user
+							variable named Path with the full path to
+							flutter\bin as its value.
+						</li>
+					</ul>
+				</li>
+				<li>
+					You are now ready to run Flutter commands in the Flutter
+					Console!
+				</li>
+			</ul>
+			<h2 class="font-black my-5">Step 3 : Run flutter doctor</h2>
+			<ul class="my-5">
+				<li>
+					From a console window that has the Flutter directory in
+					the path (see above), run the following command to see
+					if there are any platform dependencies you need to
+					complete the setup:
+				</li>
+				<li>
+					<div class="pre p-5 bg-gray-300">
+						C:\src\flutter>flutter doctor
+					</div>
+				</li>
+				<li>
+					If you find any issue during environment setup, please
+					go online
+					<a href="https://flutter.dev/docs/get-started/install/windows"
+						class="text-blue-600 font-black">Click Here</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

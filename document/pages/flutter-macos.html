@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+	<style>
+		body {
+			font-family: "Nunito", sans-serif;
+			background: #f1f1f2;
+		}
+
+		ul li {
+			padding: 3px 0;
+			font-weight: 100;
+			color: rgb(71, 71, 71);
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body class="h-screen flex flex-col">
+	<div class="w-full bg-black text-white font-bold text-center py-2 text-xl">
+		Hotel Booking App UiKIT in Flutter
+	</div>
+	<div class="xl:container mx-auto grid grid-cols-6 gap-2 h-full w-full">
+		<div class="col-span-1 py-10">
+			<h2 class="font-bold pb-2">Prerequisite Tools & Setup</h2>
+			<ul class="mb-10">
+				<li><a href="../index.html">Introduction</a></li>
+				<li><a href="prerequisite.html">Tools & Setup</a></li>
+				<li>
+					<a href="flutter-windows.html">Setup flutter in android studio - Windows</a>
+				</li>
+				<li>
+					<a href="flutter-macos.html" class="font-black">Setup flutter in android studio - macOS</a>
+				</li>
+				<li>
+					<a href="flutter-linux.html">Setup flutter in android studio - Linux</a>
+				</li>
+			</ul>
+
+			<h2 class="font-bold pb-2">
+				<a href="get-started.html">Getting Started (Build & Run)</a>
+			</h2>
+
+			<h2 class="font-bold pb-2">Configuration & Customization</h2>
+			<ul class="mb-10">
+				<li>
+					<a href="configuration-android.html">Android Configuration</a>
+				</li>
+				<li>
+					<a href="configuration-ios.html">iOS Configuration</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-span-5 bg-white py-10 px-6">
+			<h1 class="mb-5">
+				How to Setup Flutter in Android Studio – macOS​
+			</h1>
+			<ul class="list-disc mx-10 my-5">
+				<li>
+					Download Android Studio –
+					https://developer.android.com/studio/
+				</li>
+				<li>
+					Download Xcode –
+					https://apps.apple.com/us/app/xcode/id497799835?mt=12
+				</li>
+				<li>
+					Get the Flutter SDK –
+					https://flutter.dev/docs/get-started/install
+				</li>
+				<li>
+					Learn more about Android Studio –
+					https://developer.android.com/studio/intro/
+				</li>
+			</ul>
+			<h2 class="font-black my-5">Step 1 : Get the Flutter SDK</h2>
+			<ul class="my-5">
+				<li>
+					Download the following installation bundle to get the
+					latest stable release of the Flutter SDK:
+				</li>
+				<li>
+					Download SDK and extract downloaded file, just double
+					click on that. and just copy extracted folder and paste
+					it to your desired location (for example,
+					Documents\flutter).
+				</li>
+			</ul>
+			<h2 class="font-black my-5">Step 2 : Update your path</h2>
+			<ul class="my-5">
+				<li>To update PATH variable, we need to open terminal.</li>
+				<li>
+					To update PATH variable for current terminal window
+					only, then enter this command
+					<span class="font-black">“export PATH=”$PATH:`pwd`/flutter/bin”</span>
+					and hit enter key.
+				</li>
+				<li>
+					To update PATH variable permanently, then Open or create
+					.bash_profile file. to open or create that file, then
+					enter
+					<span class="font-black">“sudo open -e $HOME/.bash_profile”</span>
+					and hit enter key.
+				</li>
+				<li>
+					Append below line to bash_profile file at bottom of all
+					other content.
+					<span class="font-black">“export
+						PATH=”$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin”</span>
+					as [PATH_TO_FLUTTER_GIT_DIRECTORY] is actual path of SDK
+					folder.
+				</li>
+				<li>
+					Run this command on terminal
+					<span class="font-black">“source $HOME/.bash_profile” </span>to refresh PATH variables.
+				</li>
+				<li>
+					Then check whether our SDK is successfully installed or
+					not.
+				</li>
+				<li>
+					You are now ready to run Flutter commands in the Flutter
+					Console!
+				</li>
+				<li>
+					Run
+					<span class="font-black">“flutter doctor”</span> into
+					terminal, If you are getting check list of flutter sdk
+					requirements, it means SDK is successfully installed on
+					your machine. and you can start building flutter apps on
+					your machine.
+				</li>
+				<li>
+					If you find any issue during environment setup in macos,
+					please go online
+					<a href="https://flutter.dev/docs/get-started/install/macos" class="text-blue-600 font-black">Click
+						here</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

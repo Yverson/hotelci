@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+	<style>
+		body {
+			font-family: "Nunito", sans-serif;
+			background: #f1f1f2;
+		}
+
+		ul li {
+			padding: 3px 0;
+			font-weight: 100;
+			color: rgb(71, 71, 71);
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight: bold;
+		}
+
+		pre {
+			white-space: pre-wrap;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+
+<body class="h-screen flex flex-col">
+	<div class="w-full bg-black text-white font-bold text-center py-2 text-xl">
+		Hotel Booking App UiKIT in Flutter
+	</div>
+	<div class="xl:container mx-auto grid grid-cols-6 gap-2 h-full w-full">
+		<div class="col-span-1 py-10">
+			<h2 class="font-bold pb-2">Prerequisite Tools & Setup</h2>
+			<ul class="mb-10">
+				<li><a href="../index.html">Introduction</a></li>
+				<li><a href="prerequisite.html">Tools & Setup</a></li>
+				<li>
+					<a href="flutter-windows.html">Setup flutter in android studio - Windows</a>
+				</li>
+				<li>
+					<a href="flutter-macos.html">Setup flutter in android studio - macOS</a>
+				</li>
+				<li>
+					<a href="flutter-linux.html">Setup flutter in android studio - Linux</a>
+				</li>
+			</ul>
+
+			<h2 class="font-bold pb-2">
+				<a href="get-started.html">Getting Started (Build & Run)</a>
+			</h2>
+
+			<h2 class="font-bold pb-2">Configuration & Customization</h2>
+			<ul class="mb-10">
+				<li>
+					<a href="configuration-android.html">Android Configuration</a>
+				</li>
+				<li>
+					<a href="configuration-ios.html" class="font-black">iOS Configuration</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-span-5 bg-white py-10 px-6">
+			<h1 class="mb-5">iOS Configuration</h1>
+			<h2 class="font-black my-5">Step 1 : Change App Name</h2>
+			<ul class="list-decimal mx-10 my-5">
+				<li>
+					Select your project file icon in Group and files panel.
+				</li>
+				<li>Then Select Target -> Info Tab.</li>
+				<li>At last change Bundle Name.</li>
+			</ul>
+			<img class="m-10 w-4/5" src="../img/ios_app_name.png" />
+			<h2 class="font-black my-5">
+				Step 2 : Change Bundle Identifier
+			</h2>
+			<p>
+				Bundle Id is a unique Identifier of your of app on iOS and
+				MacOS. iOS and MacOS use it to recognise updates to your
+				app. The identifier must be unique for your app.
+			</p>
+			<ul class="list-decimal mx-10 my-5">
+				<li>
+					Select your project file icon in Group and files panel.
+				</li>
+				<li>Select General Tab.</li>
+				<li>
+					After Select General tab you can see the details of your
+					application.
+				</li>
+				<li>In Identity section, rename your Bundle identifier.</li>
+			</ul>
+			<img class="m-10 w-4/5" src="../img/ios_identifire_name.png" />
+			<h2 class="font-black my-5">Step 3 : Change App Icons</h2>
+			<ul class="list-decimal mx-10 my-5">
+				<li>
+					In Group and files panel find “Assets.xcassets” folder.
+				</li>
+				<li>In Assets.xcassets folder replace AppIcon.</li>
+			</ul>
+
+
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
