@@ -48,8 +48,8 @@ class _NearYouScreenState extends State<NearYouScreen> {
             markers: widget._con.markers,
             initialCameraPosition: CameraPosition(
               target: /*_con.latLng*/ LatLng(
-                  double.parse(GlobalVariable.Latitude.toString()),
-                  double.parse(GlobalVariable.longitude.toString())),
+                  double.parse(GlobalVariable.Latitude != null ? GlobalVariable.Latitude.toString() : "0"),
+                  double.parse(GlobalVariable.Latitude != null ? GlobalVariable.longitude.toString() : "0")),
               zoom: /*_con.zoom*/ 15.0,
             ),
           ),
@@ -285,6 +285,8 @@ class _NearYouScreenState extends State<NearYouScreen> {
         GlobalVariable.ClientsData = cliData;
 
         for (var item in GlobalVariable.ClientsData!.listeHotelNear!) {
+
+          item.lat != null ?
           widget._con.markers.add(
             Marker(
               markerId: MarkerId(item.id.toString()),
@@ -339,7 +341,7 @@ class _NearYouScreenState extends State<NearYouScreen> {
                 );
               },
             ),
-          );
+          )   : "";
         }
 
         return cliData;
@@ -351,6 +353,8 @@ class _NearYouScreenState extends State<NearYouScreen> {
       }
     } else {
       for (var item in GlobalVariable.ClientsData!.listeHotelNear!) {
+
+        item.lat != null ?
         widget._con.markers.add(
           Marker(
             markerId: MarkerId(item.id.toString()),
@@ -405,7 +409,7 @@ class _NearYouScreenState extends State<NearYouScreen> {
               );
             },
           ),
-        );
+        )  : "";
       }
       return GlobalVariable.ClientsData as ClientsDatas;
     }

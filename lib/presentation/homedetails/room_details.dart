@@ -342,11 +342,11 @@ class _HomeDetailScreen extends State<HomeDetailScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: installations.map((item) => Column(
           children: [
-                            Image.asset(
+            item.icone !=  null  ? Image.asset(
                   item.icone!,
                   height: 18,
                   color: AppColors.textGreyColor,
-                ),
+                ) : Container(),
                 const SizedBox(height: 5),
                 Text(
                   item.description.toString(),
