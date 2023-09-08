@@ -5,7 +5,6 @@ import 'package:hotel_ci/presentation/addReview/add_review_screen.dart';
 import 'package:hotel_ci/presentation/auth/confirm_password/confirm_password.dart';
 import 'package:hotel_ci/presentation/auth/forgot_password/forgot_password.dart';
 import 'package:hotel_ci/presentation/auth/login/login_register.dart';
-import 'package:hotel_ci/presentation/auth/otp_verify/otp_verify_screen.dart';
 import 'package:hotel_ci/presentation/auth/splash/splash_screen.dart';
 import 'package:hotel_ci/presentation/auth/welcome/welcome_screen.dart';
 import 'package:hotel_ci/presentation/booking/booking_screen.dart';
@@ -78,7 +77,6 @@ class AppRoutes {
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: welcomeScreen, page: () => WelcomeScreen()),
     GetPage(name: loginRegisterScreen, page: () => LoginRegisterScreen()),
-    GetPage(name: otpVerifyScreen, page: () => const OtpVerifyScreen()),
     GetPage(
         name: forgotPasswordScreen, page: () => const ForgotPasswordScreen()),
     GetPage(

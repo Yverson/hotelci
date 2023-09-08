@@ -30,37 +30,35 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-## save user data
-  get_storage: ^2.0.3
   ## Svg assets
   flutter_svg: ^0.22.0
-  ## For device info
-  device_info_plus: ^2.1.0
   ## Network supporting libraries
   http: ^0.13.3
-  ## multipart image
-  dio: ^4.0.0
-  ## Network connection check
-  connectivity: ^3.0.6
   ## DateFormat
   intl: ^0.17.0
   url_launcher: ^6.0.10
-  image_picker: ^0.8.9
-  image_cropper: ^1.5.0
   flutter_zoom_drawer: ^2.3.1
-  carousel_slider: ^4.0.0
-  pin_code_fields: ^7.3.0
-  range_slider_flutter: ^0.0.2
   google_maps_flutter: ^2.1.2
   custom_info_window: ^1.0.1
   clippy_flutter: ^2.0.0-nullsafety.1
+  ## save user data
+  get_storage: ^2.0.3
+  carousel_slider: ^4.0.0
   shared_preferences: ^2.0.15
+
+  ## multipart image
+  dio: ^4.0.0
+  ## DateFormat
+  image_picker: ^0.8.9
+  image_cropper: ^1.5.0
+
+  pin_code_fields: ^7.3.0
+  range_slider_flutter: ^0.0.2
   onesignal_flutter: ^3.4.2
-  geolocator: ^9.0.2
+  geolocator: ^10.0.1
   webview_flutter: ^4.2.2
 
 
@@ -76,7 +74,7 @@ flutter_icons:
   image_path: "assets/images/splashIcon.png"
 
 flutter_launcher_name:
-  name: "RESILUX"
+  name: "Resilux"
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
