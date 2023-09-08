@@ -42,8 +42,8 @@ class _NearYouMapScreen extends State<NearYouMapScreen> {
             markers: _con.markers,
             initialCameraPosition: CameraPosition(
               target: /*_con.latLng*/ LatLng(
-                  double.parse(GlobalVariable.Latitude.toString()),
-                  double.parse(GlobalVariable.longitude.toString())),
+                  double.parse(GlobalVariable.Latitude != null ? GlobalVariable.Latitude.toString() : "0"),
+                  double.parse(GlobalVariable.longitude != null ? GlobalVariable.longitude.toString() : "0")),
               zoom: /*_con.zoom*/ 15.0,
             ),
           ),

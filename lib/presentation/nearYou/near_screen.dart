@@ -49,7 +49,7 @@ class _NearYouScreenState extends State<NearYouScreen> {
             initialCameraPosition: CameraPosition(
               target: /*_con.latLng*/ LatLng(
                   double.parse(GlobalVariable.Latitude != null ? GlobalVariable.Latitude.toString() : "0"),
-                  double.parse(GlobalVariable.Latitude != null ? GlobalVariable.longitude.toString() : "0")),
+                  double.parse(GlobalVariable.longitude != null ? GlobalVariable.longitude.toString() : "0")),
               zoom: /*_con.zoom*/ 15.0,
             ),
           ),
