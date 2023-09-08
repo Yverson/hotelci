@@ -23,7 +23,7 @@ class GlobalVariable {
   static String oneSignaleAppId = "fe26ab2c-e2e1-410c-8c99-6d3c4fbb20c9";
   static String? Latitude;
   static String? longitude;
-  static const String apiurl = 'https://glad-oriented-camel.ngrok-free.app/';
+  static const String apiurl = 'http://api.hotels.ci/';
   //static const String apiurl = 'http://api.hotels.ci/';
   static const String wsurl = 'ws://api.hotels.ci/';
 

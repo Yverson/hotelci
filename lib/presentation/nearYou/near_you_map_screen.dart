@@ -473,6 +473,8 @@ class _NearYouMapScreen extends State<NearYouMapScreen> {
         GlobalVariable.ClientsData = cliData;
 
         for (var item in GlobalVariable.ClientsData!.listeHotelNear!) {
+
+          item.lat != null ?
           _con.markers.add(
             Marker(
               markerId: MarkerId(item.id.toString()),
@@ -532,7 +534,7 @@ class _NearYouMapScreen extends State<NearYouMapScreen> {
                 );
               },
             ),
-          );
+          )  : "";
         }
 
         return cliData;
@@ -544,6 +546,8 @@ class _NearYouMapScreen extends State<NearYouMapScreen> {
       }
     } else {
       for (var item in GlobalVariable.ClientsData!.listeHotelNear!) {
+
+        item.lat != null ?
         _con.markers.add(
           Marker(
             markerId: MarkerId(item.id.toString()),
@@ -599,7 +603,7 @@ class _NearYouMapScreen extends State<NearYouMapScreen> {
               );
             },
           ),
-        );
+        )  : "";
       }
       return GlobalVariable.ClientsData as ClientsDatas;
     }
