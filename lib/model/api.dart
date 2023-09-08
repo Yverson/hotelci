@@ -186,7 +186,6 @@ Future<User> createUser() async {
   return GlobalVariable.CurrentUser!;
 }
 
-
 //envoie d'info a l'API
 Future<http.Response> sendStatistiques(Statistiques post) async {
   final Map<String, String> header = {

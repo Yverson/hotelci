@@ -20,7 +20,7 @@ class GlobalVariable {
   static ClientCommande? CurrentClientCommande = null;
   static Providers? Nearhotel = null;
   static Providers? discoverseHotel = null;
-  static String oneSignaleAppId = "fe26ab2c-e2e1-410c-8c99-6d3c4fbb20c9";
+  static String oneSignaleAppId = "28d220d8-4260-4447-b47c-e6017a2ba9e5";
   static String? Latitude;
   static String? longitude;
   static const String apiurl = 'http://api.hotels.ci/';

@@ -55,6 +55,8 @@
     <string>Needed to access location when the app is open and run in background.</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>We need access to your photo library to allow you to select and upload photos for your profile.</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>We need access to your location to provide location-based services and enhance your experience.</string>
 
 </dict>
 </plist>
