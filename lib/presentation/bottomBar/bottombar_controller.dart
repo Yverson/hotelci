@@ -20,10 +20,10 @@ class BottomBarController extends GetxController {
   }
 
   RxList<Drawer> drawerList = RxList([
-    Drawer(
+    /*Drawer(
       image: ImageConstant.profile3,
       title: "Commentaires".tr,
-    ),
+    ),*/
     /*Drawer(
       image: ImageConstant.filter,
       title: "filter".tr,
@@ -40,10 +40,10 @@ class BottomBarController extends GetxController {
       image: ImageConstant.setting1,
       title: "settings".tr,
     ),*/
-    Drawer(
+    /*Drawer(
       image: ImageConstant.info1,
       title: "Mon profil".tr,
-    ),
+    ),*/
     Drawer(
       image: ImageConstant.logout,
       title: "logout".tr,

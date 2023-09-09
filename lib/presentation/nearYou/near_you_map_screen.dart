@@ -26,7 +26,7 @@ class _NearYouMapScreen extends State<NearYouMapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: appBar(text: "Near you", backgroundColor: Colors.transparent),
+      appBar: appBar(text: "Près de vous", backgroundColor: Colors.transparent),
       body: Stack(
         children: <Widget>[
           GoogleMap(

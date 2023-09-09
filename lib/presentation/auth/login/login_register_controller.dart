@@ -11,8 +11,8 @@ class LoginRegisterController extends GetxController
 
   @override
   void onInit() {
-    super.onInit();
     CheckToken();
+    super.onInit();
     tabController = Rx(
       TabController(
         length: 2,

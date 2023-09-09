@@ -54,7 +54,12 @@ Future<void> CheckToken() async {
   to authenticate if has an expired token */
     bool isTokenExpired = JwtDecoder.isExpired(token);
 
-    if (!isTokenExpired) {
+    if (isTokenExpired) {
+
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setString("token", "");
+      await prefs.setString("userName", "");
+      await prefs.setString("password", "");
       // The user should authenticate
       Get.toNamed(AppRoutes.loginRegisterScreen);
     }
@@ -73,5 +78,17 @@ Future<void> CheckToken() async {
 
     Get.toNamed(AppRoutes.bottomBarScreen);
   }
+
+}
+
+// Methode checkToken pour anciene connexion
+Future<void> Deconnect() async {
+
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setString("token", "");
+      await prefs.setString("userName", "");
+      await prefs.setString("password", "");
+
+    Get.toNamed(AppRoutes.loginRegisterScreen);
 
 }

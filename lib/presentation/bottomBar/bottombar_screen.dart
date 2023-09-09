@@ -111,7 +111,7 @@ class BottomBarScreen extends StatelessWidget {
                               onTap: () {
                                 _con.isTap.value = index;
 
-                                _con.isTap.value == 0
+                                /*_con.isTap.value == 0
                                     ? Get.toNamed(AppRoutes.reviewsScreen)
                                     : _con.isTap.value == 1
                                         ? Get.toNamed(AppRoutes.historyScreen)
@@ -121,7 +121,14 @@ class BottomBarScreen extends StatelessWidget {
                                     context,
                                     MaterialPageRoute(
                                     builder: (context) => SupportScreen(Id: 'b4e71cc1-2f67-4638-8911-8c95dd740b6a', Montant: '100' ),
-                                ) ) : null;
+                                ) ) : null;*/
+
+                                _con.isTap.value == 0
+                                    ? Get.toNamed(AppRoutes.historyScreen)
+                                    : _con.isTap.value == 1
+                                    ?
+                                Deconnect() : null;
+
                               },
                               child: Container(
                                 margin: const EdgeInsets.symmetric(

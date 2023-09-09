@@ -10,7 +10,7 @@ class AboutusScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(text: "aboutus".tr, action: ImageConstant.delete),
+      appBar: appBar(text: "aboutus".tr),
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: SingleChildScrollView(
@@ -28,8 +28,8 @@ class AboutusScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               aboutUs(
-                  image: ImageConstant.email, info: "uitheme.world@gmail.com"),
-              aboutUs(image: ImageConstant.call, info: "+91 8469393218"),
+                  image: ImageConstant.email, info: "Resiluxh225@gmail.com"),
+              aboutUs(image: ImageConstant.call, info: "0767287062"),
               const SizedBox(height: 20),
               Text(
                 'companyaddress'.tr + " :",
