@@ -506,7 +506,7 @@ Future<void> initPlatformState(BuildContext context) async {
   OneSignal.shared.setAppId(GlobalVariable.oneSignaleAppId);
 
 //c'est celui qui te permet de ajouter un Id unique dans la base de données
-   OneSignal.shared.setExternalUserId(GlobalVariable.CurrentUser!.id.toString());
+   OneSignal.shared.setExternalUserId(GlobalVariable.Id.toString());
 
   //Celui pour demander la permission a l utilisateur de utiliser les notification
   // The promptForPushNotificationsWithUserResponse function will show the iOS push notification prompt. We recommend removing the following code and instead using an In-App Message to prompt for notification permission

@@ -60,6 +60,7 @@ dependencies:
   onesignal_flutter: ^3.4.2
   geolocator: ^10.0.1
   webview_flutter: ^4.2.2
+  jwt_decoder: ^2.0.1
 
 
 
